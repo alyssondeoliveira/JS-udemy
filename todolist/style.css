@@ -23,7 +23,8 @@ section {
 #produto, #preco {
     border-radius: 10px;
     width: 200px;
-    height: 20px;
+    height: 25px;
+    border: none;
 }
 
 section > div > p {
@@ -64,12 +65,13 @@ section > ul > span {
 section > div#res {
     margin-top: 10px;
     font-size: 20px;
+    padding: 10px;
 }
 
 input[type=submit]  {
     width: 200px;
     height: 30px;
-    background-color: rgba(0, 255, 255, 0.753);
+    background-color: rgba(0, 255, 255, 0.678);
     color: aliceblue;
     font: 600 15px Arial;
     border: none;
@@ -77,6 +79,15 @@ input[type=submit]  {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.336);
 }
 
+input[type=submit]:hover {
+    background-color: rgba(0, 255, 255, 0.61);
+    
+}
+
+input[type=submit]:active {
+    background-color: rgba(0, 255, 255, 0.514);
+    transform: translateY(2px);
+}
 
 footer {
     margin: auto;
