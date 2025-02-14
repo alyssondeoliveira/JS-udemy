@@ -1,14 +1,23 @@
 body {
-    font: 500 10pt Arial;
+    font: 500 15pt Arial;
+    background-color: hwb(0 13% 87%);
     
 }
 
 header {
     text-align: center;
+    font: 900 20px Arial;
+    color: white;
 }
 
 section {
+    background-image: linear-gradient(106deg, rgba(153, 153, 153, 0.068) 60%, rgba(255, 255, 255, 0.233));
+    color: white;
+    width: 400px;
+    margin: auto;
     text-align: center;
+    border: 1px solid white;
+    border-radius: 20px;
 }
 
 section > ul {
