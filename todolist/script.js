@@ -20,7 +20,7 @@ function cadastrar() {
             lista.removeChild(item)
             lista.removeChild(remover)
         }
-
+ 
     }
     produto.value = ''
     produto.focus()
