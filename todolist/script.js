@@ -7,6 +7,7 @@ function cadastrar() {
         let preco = document.getElementById('preco').value
         let valor = Number(preco)
         let index = valorFinal.length;
+        
         valorFinal.push(valor)
         lista.appendChild(item)
         item.innerHTML = `${produto} - R$ ${valor.toFixed(2)}  `
