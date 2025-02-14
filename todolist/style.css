@@ -1,19 +1,19 @@
 body {
-    font: 500 15pt Arial;
+    font: 500 15px Arial;
     background-color: hwb(0 13% 87%);
     
 }
 
 header {
     text-align: center;
-    font: 900 20px Arial;
+    font: 900 15px Arial;
     color: white;
 }
 
 section {
     background-image: linear-gradient(106deg, rgba(153, 153, 153, 0.068) 50%, rgba(255, 255, 255, 0.13));
     color: white;
-    width: 400px;
+    width: 300px;
     margin: auto;
     text-align: center;
     border: 1px solid white;
