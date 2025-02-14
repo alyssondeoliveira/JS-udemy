@@ -10,7 +10,7 @@ function cadastrar() {
         lista.appendChild(item)
         item.innerHTML = `${produto} - R$ ${valor.toFixed(2)}  `
         
-
+        // Opção de exclusão de item da lista
         let remover = document.createElement('span')
         remover.textContent = '❌'
         remover.className = 'remover'
