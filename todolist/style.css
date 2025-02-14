@@ -1,0 +1,30 @@
+body {
+    font: 500 10pt Arial;
+    
+}
+
+header {
+    text-align: center;
+}
+
+section {
+    text-align: center;
+}
+
+section > ul {
+    list-style: none;
+    padding: 0px;
+}
+
+section > ul > li {
+    margin-top: 10px;
+}
+
+section > div#res {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+footer {
+    margin: auto;
+}

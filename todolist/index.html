@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista supermercado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Lista de supermercado</h1>
+    </header>
+    <section>
+        <div id="inserir">
+            <p>Produto:
+            </p>
+            <input type="text" name="produto" id="produto">
+            <p>Preço:
+            </p>
+            <input type="number" name="preco" id="preco">
+            <p>
+                <input type="button" value="Cadastrar" id="cadastrar" onclick="cadastrar()">
+            </p>
+        </div>
+        <ul id="lista">
+
+        </ul>
+        <input type="button" value="Calcular total" onclick="valorTotal()">
+        <div id="res"></div>
+    </section>
+    <footer>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
