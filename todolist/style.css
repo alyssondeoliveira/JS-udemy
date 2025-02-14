@@ -6,7 +6,7 @@ body {
 
 header {
     text-align: center;
-    font: 900 15px Arial;
+    
     color: white;
 }
 
@@ -27,8 +27,8 @@ section > ul {
     align-items: center;
     list-style: none;
     padding: 0px;
-    justify-content: center;
-    width: 400px;
+    justify-content: space-around;
+    width: 300px;
     
 }
 
