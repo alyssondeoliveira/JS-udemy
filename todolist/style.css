@@ -12,18 +12,41 @@ section {
 }
 
 section > ul {
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     list-style: none;
     padding: 0px;
+    justify-content: center;
+    width: 400px;
+    
 }
 
 section > ul > li {
     margin-top: 10px;
+    width: 50%;
+    text-align: left;
+    
+    
+}
+
+section > ul > span {
+    display: inline;
+    text-align: center;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 20px;
+    
+    
+    
 }
 
 section > div#res {
     margin-top: 10px;
     font-size: 20px;
 }
+
 
 footer {
     margin: auto;

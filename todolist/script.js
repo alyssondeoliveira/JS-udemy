@@ -8,14 +8,26 @@ function cadastrar() {
         let valor = Number(preco)
         valorFinal.push(valor)
         lista.appendChild(item)
-        item.innerHTML = `${produto} - R$${valor.toFixed(2)}`
+        item.innerHTML = `${produto} - R$${valor.toFixed(2)}  `
         
+
+        let remover = document.createElement('span')
+        remover.textContent = '❌'
+        remover.className = 'remover'
+        lista.appendChild(remover)
+        remover.onclick = function(event) {
+            event.stopPropagation()
+            lista.removeChild(item)
+            lista.removeChild(remover)
+        }
 
     }
     produto.value = ''
     produto.focus()
     preco.value = ''
+
 }
+
 function valorTotal(){
     let soma = 0
     for(let i = 0; i < valorFinal.length; i++){
