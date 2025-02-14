@@ -8,7 +8,7 @@ function cadastrar() {
         let valor = Number(preco)
         valorFinal.push(valor)
         lista.appendChild(item)
-        item.innerHTML = `${produto} - R$${valor.toFixed(2)}  `
+        item.innerHTML = `${produto} - R$ ${valor.toFixed(2)}  `
         
 
         let remover = document.createElement('span')
@@ -19,6 +19,7 @@ function cadastrar() {
             event.stopPropagation()
             lista.removeChild(item) 
             lista.removeChild(remover)
+            res.innerHTML = ''
         }
  
     }
@@ -34,5 +35,5 @@ function valorTotal(){
         soma += valorFinal[i]
     }
     let res = document.getElementById('res')
-    res.innerHTML = `Valor Total: R$${soma.toFixed(2)}`
+    res.innerHTML = `Valor Total: R$ ${soma.toFixed(2)}`
 }
