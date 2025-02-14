@@ -6,6 +6,7 @@ function cadastrar() {
         let item = document.createElement('li')
         let preco = document.getElementById('preco').value
         let valor = Number(preco)
+        let index = valorFinal.length;
         valorFinal.push(valor)
         lista.appendChild(item)
         item.innerHTML = `${produto} - R$ ${valor.toFixed(2)}  `
@@ -17,9 +18,11 @@ function cadastrar() {
         lista.appendChild(remover)
         remover.onclick = function(event) {
             event.stopPropagation()
+            valorFinal.splice(index, 1)
             lista.removeChild(item) 
             lista.removeChild(remover)
             res.innerHTML = ''
+            
         }
  
     }
@@ -31,6 +34,7 @@ function cadastrar() {
 
 function valorTotal(){
     let soma = 0
+    
     for(let i = 0; i < valorFinal.length; i++){
         soma += valorFinal[i]
     }
