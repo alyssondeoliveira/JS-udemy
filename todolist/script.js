@@ -17,7 +17,7 @@ function cadastrar() {
         lista.appendChild(remover)
         remover.onclick = function(event) {
             event.stopPropagation()
-            lista.removeChild(item)
+            lista.removeChild(item) 
             lista.removeChild(remover)
         }
  
