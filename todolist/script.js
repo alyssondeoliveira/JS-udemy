@@ -1,6 +1,6 @@
 let valorFinal = []
 function cadastrar() {
-    if (produto) {
+    if (produto.value && preco.value) {
         let produto = document.getElementById('produto').value
         let lista = document.getElementById('lista')
         let item = document.createElement('li')
@@ -18,7 +18,6 @@ function cadastrar() {
         remover.className = 'remover'
         lista.appendChild(remover)
         remover.onclick = function(event) {
-            event.stopPropagation()
             valorFinal.splice(index, 1)
             lista.removeChild(item) 
             lista.removeChild(remover)
@@ -26,6 +25,8 @@ function cadastrar() {
             
         }
  
+    }else {
+        alert('ERRO! Cadastre um produto e preço.')
     }
     produto.value = ''
     produto.focus()
